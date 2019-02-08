@@ -1,6 +1,3 @@
-// Declare global variables
-
-// List of words that will be guessed
 var marioArray = [
     "mario",
     "peach",
@@ -22,32 +19,32 @@ var marioArray = [
     "koopa troopa"
 ];
 
-// Variable that will randomly determinie which word will be played
+
 var currentWord = marioArray[Math.floor(Math.random() * marioArray.length)].toLowerCase();
 
-// Variable that will hold the number of guesses remaining
+
 var guessesLeft = 10;
 document.getElementById("guesses-left").innerHTML = guessesLeft;
 
-// Variable that will keep track of number of wins
+
 var wins = 0;
 document.getElementById("wins").innerHTML = wins;
 var resetLettersGuessed = "";
 
-// Empty array to push blanks to
+
 var progressWord = [];
 
-// Empty array to push letter from current word and compare guess
+
 var mysteryWord = [];
 var i;
 
-// Create blank space for currently played word
+
 for (i = 0; i < currentWord.length; i++) {
     progressWord.push("_");
 }
 document.getElementById("word-guess").innerHTML = progressWord.join(" ");
 
-// Figure out position of guessed letter in Current Word, return empty array if wrong
+
 function letterInWord(letter) {
     var positions = new Array();
     for (i = 0 ; i < currentWord.length; i++) {
