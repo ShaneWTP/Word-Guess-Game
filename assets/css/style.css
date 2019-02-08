@@ -1,0 +1,22 @@
+
+#header {
+    position: relative;
+}
+
+#bodyContent {
+    background: #A0ADFF;
+}
+
+#gameContent {
+    font-family: 'Press Start 2P'; font-size: 22px;
+    text-align: center;
+    width: auto;
+}
+
+.responsive-image {
+    height: auto;
+    width: 100%;
+}
+
+
+

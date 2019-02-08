@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane's Nintendo Word Guess</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="container" id="header">
+        <img src="assets/images/super-mario-start.jpg" alt="Super Hangman Bros" style="height: 300px; width: 100%;">
+    </div>
+    <div class="container" id="bodyContent">
+        <div class="row">
+            <div class="col-xs-6" id="leftContent">
+                <div class="imageLogo">
+                    <img src="assets/images/question-block.gif" id="qBlock" class="responsive-img" alt="Question Block" width="550px">
+                </div>
+            </div>
+            <div class="col-sm-6" id="gameContent">
+                <h2>Press any letter to play!</h2>
+                <br>
+                <h4>Current Word</h4>
+                <br><br>
+                <h5><span id="word-guess"></span></h5>
+                <br>
+                <h5>Guesses Remaining</h5>
+                <h6><span id="guesses-left"></span></h6>
+                <br>
+                <h5>Letters Already Guessed</h5>
+                <h6><span id="letters-guessed"></span></h6>
+                <br>
+                <h5>Wins</h5>
+                <h6><span id="wins"></span></h6>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/javascript/game.js" type="text/javascript"></script>
+</html>
